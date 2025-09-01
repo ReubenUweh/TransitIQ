@@ -100,23 +100,20 @@ nav .navbar-brand:hover {
 }
 
 
-/* why transitIQ */
-.value-prop {
-  /* background: linear-gradient(180deg, #0a0a0a 0%, #111 100%); */
+/* Why TransitIQ Extended Section */
+.why-transitiq {
   color: #ddd;
-  margin: 20px 0;
   padding: 4rem 1rem;
-  position: relative;
 }
 
-.value-prop h2 {
+.why-transitiq h2 {
   font-size: 2rem;
   color: var(--secondary-color);
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   position: relative;
 }
 
-.value-prop h2::after {
+.why-transitiq h2::after {
   content: "";
   display: block;
   width: 60px;
@@ -126,26 +123,41 @@ nav .navbar-brand:hover {
   border-radius: 2px;
 }
 
-.value-prop p {
-  max-width: 700px;
-  margin: 0 auto 1.5rem;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #ccc;
+.why-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
 }
 
-.value-prop p.highlight {
+.why-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 255, 128, 0.15);
+}
+
+.why-card h4 {
   color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
   font-weight: 600;
-  font-size: 1.15rem;
-  background: rgba(0, 255, 128, 0.08);
-  border-left: 4px solid var(--secondary-color);
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-  display: inline-block;
 }
 
-/* features */
+.why-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.why-card img {
+  border-radius: 8px;
+  max-height: 160px;
+  object-fit: cover;
+}
+/* End of Why TransitIQ Extended Section */
+
+/* Features Section */
 .features {
   background: #0b1a0b;
   color: #e5e5e5;
