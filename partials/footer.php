@@ -10,11 +10,11 @@ echo '<!-- Footer -->
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="./about.php">About</a></li>
+                    <li><a href="./blog.php">Blog</a></li>
+                    <li><a href="./contact.php">Contact</a></li>
+                    <li><a href="./privacy.php">Privacy Policy</a></li>
+                    <li><a href="./terms.php">Terms of Service</a></li>
                 </ul>
             </div>
 

@@ -14,16 +14,16 @@ echo '<header>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-lg-auto mx-auto text-center">
                         <li class="nav-item">
-                            <a class="nav-link mx-3" aria-current="page" href="#">Home</a>
+                            <a class="nav-link mx-3" aria-current="page" href="./index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-3" href="#">Blog</a>
+                            <a class="nav-link mx-3" href="./blog.php">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-3" href="#">About</a>
+                            <a class="nav-link mx-3" href="./about.php">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-3" href="#">Contact</a>
+                            <a class="nav-link mx-3" href="./contact.php">Contact</a>
                         </li>
                     </ul>
                 </div>
