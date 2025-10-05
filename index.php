@@ -5,44 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TransitIQ</title>
-    <link rel="stylesheet" href="../assets/css/index.css">
-    <link rel="stylesheet" href="../libraries/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="../libraries/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./libraries/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./libraries/fontawesome/css/all.css">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="bg-black text-white">
-    <header>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand mx-4" href="#">TransitIQ</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ms-lg-auto mx-auto text-center">
-                        <li class="nav-item">
-                            <a class="nav-link mx-3" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-3" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-3" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-3" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- End Navbar -->
-    </header>
+    <?php require "./partials/header.php";?>
     <main>
         <!-- Hero Session -->
         <section class="hero d-flex align-items-center mt-5">
@@ -63,7 +33,7 @@
                     </div>
                     <!-- Right Image -->
                     <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="1000">
-                        <img src="../assets/images/hero-image.avif" alt="Package Image" class="img-fluid hero-img">
+                        <img src="./assets/images/hero-image.avif" alt="Package Image" class="img-fluid hero-img">
                     </div>
                 </div>
             </div>
@@ -78,7 +48,7 @@
                     <!-- Card 1 -->
                     <div class="col-md-4">
                         <div class="why-card">
-                            <img src="../assets/images/customs.avif" alt="Customs Made Easier" class="img-fluid mb-3 rounded">
+                            <img src="./assets/images/customs.avif" alt="Customs Made Easier" class="img-fluid mb-3 rounded">
                             <h4>Customs Made Easier</h4>
                             <p>Get simplified solutions for cross-border goods and services with accurate information,
                                 reduced delays, and smooth clearance processes.</p>
@@ -88,7 +58,7 @@
                     <!-- Card 2 -->
                     <div class="col-md-4">
                         <div class="why-card">
-                            <img src="../assets/images/tracking.avif" alt="Reliable Tracking" class="img-fluid mb-3 rounded">
+                            <img src="./assets/images/tracking.avif" alt="Reliable Tracking" class="img-fluid mb-3 rounded">
                             <h4>Reliable Tracking</h4>
                             <p>Track your deliveries and services in real-time with timely updates that keep you
                                 informed and in control.</p>
@@ -98,7 +68,7 @@
                     <!-- Card 3 -->
                     <div class="col-md-4">
                         <div class="why-card">
-                            <img src="../assets/images/green.avif" alt="Eco Friendly" class="img-fluid mb-3 rounded">
+                            <img src="./assets/images/green.avif" alt="Eco Friendly" class="img-fluid mb-3 rounded">
                             <h4>Eco Friendly Approach</h4>
                             <p>Stay aware of your footprint with insights that help you manage efficiency and contribute
                                 to sustainability.</p>
@@ -189,42 +159,10 @@
         <!-- End of Back-to-Top and Live Chat buttons  -->
     </main>
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-brand">
-                <h2>TransitIQ</h2>
-                <p>Simplifying your daily commute with live updates and smart tracking.</p>
-            </div>
+    <?php require "./partials/footer.php";?>
 
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-social">
-                <h4>Follow Us</h4>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2025 TransitIQ. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="../assets/js/index.js"></script>
-    <script src="../libraries/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./libraries/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init();
