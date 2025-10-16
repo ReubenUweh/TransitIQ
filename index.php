@@ -1,173 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TransitIQ</title>
+    <title>TransitIQ - Smart Logistics & Real-Time Package Tracking</title>
+    <meta name="description" content="Transform your logistics with TransitIQ. Real-time package tracking, AI-powered insights, and reliable courier services for modern businesses.">
+    <meta name="keywords" content="logistics, package tracking, courier services, real-time tracking, delivery, shipping">
+    
+    <!-- Bootstrap CSS -->
+    <link href="./libraries/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./libraries/fontawesome/css/all.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/index.css">
-    <link rel="stylesheet" href="./libraries/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="./libraries/fontawesome/css/all.css">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
+<body>
+    <!-- Header -->
+   <?php require "./partials/header.php" ?>
 
-<body class="bg-black text-white">
-    <?php require "./partials/header.php";?>
-    <main>
-        <!-- Hero Session -->
-        <section class="hero d-flex align-items-center mt-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <!-- Left Content -->
-                    <div class="col-lg-6 text-center text-lg-start" data-aos="fade-right" data-aos-duration="1000">
-                        <h2 class="fw-bold mb-3"> <span class="typed-text"></span><span class="cursor">|</span></h2>
-                        <p class="lead mb-3">Track your package in seconds Worldwide</p>
-                        <p class="mb-4">Stay updated on every step from order to delivery with real-time tracking.</p>
-                        <!-- Tracking Input -->
-                        <form action="" method="get">
-                            <div class="input-group mb-4 mx-auto mx-lg-0" style="max-width: 400px;">
-                                <input type="text" class="form-control" placeholder="Enter Tracking ID">
-                                <button class="btn btn-success" type="submit">Track</button>
-                            </div>
-                        </form>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="hero-title">
+                Smart Logistics,<br>Delivered Faster
+            </h1>
+            <p class="hero-subtitle">
+                Track your packages in real-time with AI-powered logistics intelligence. Experience the future of courier services.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-hero btn-lg">Start Tracking Now</button>
+                <button class="btn btn-outline btn-lg">Watch Demo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem & Solution Section -->
+    <section class="problem-solution-section">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">The Problem with Traditional Logistics</h2>
+                    <p class="section-text">
+                        Lost packages. Delayed deliveries. Poor visibility. Frustrated customers. Traditional logistics systems leave you in the dark.
+                    </p>
+                    <ul class="problem-list">
+                        <li><span class="bullet-red"></span>No real-time updates</li>
+                        <li><span class="bullet-red"></span>Complex tracking systems</li>
+                        <li><span class="bullet-red"></span>Hidden fees</li>
+                        <li><span class="bullet-red"></span>Poor customer support</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title text-primary">The TransitIQ Solution</h2>
+                    <p class="section-text">
+                        Modern, transparent, and intelligent logistics that keeps you informed every step of the way.
+                    </p>
+                    <ul class="solution-list">
+                        <li><span class="bullet-green"></span>Live GPS tracking</li>
+                        <li><span class="bullet-green"></span>One-click access</li>
+                        <li><span class="bullet-green"></span>Transparent pricing</li>
+                        <li><span class="bullet-green"></span>24/7 dedicated support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Powerful Features</h2>
+                <p class="section-text">
+                    Everything you need to manage your logistics efficiently and effectively.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Real-Time Tracking</h3>
+                        <p class="feature-text">Track your packages in real-time with GPS precision and live updates.</p>
                     </div>
-                    <!-- Right Image -->
-                    <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="1000">
-                        <img src="./assets/images/hero-image.avif" alt="Package Image" class="img-fluid hero-img">
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="feature-title">Fast Delivery</h3>
+                        <p class="feature-text">Express delivery options with guaranteed arrival times for urgent shipments.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Secure & Safe</h3>
+                        <p class="feature-text">End-to-end encryption and insurance coverage for complete peace of mind.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="feature-title">Instant Notifications</h3>
+                        <p class="feature-text">Get SMS and email alerts at every step of your package's journey.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="feature-title">Analytics Dashboard</h3>
+                        <p class="feature-text">Track shipping trends and optimize your logistics with detailed insights.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="feature-title">24/7 Support</h3>
+                        <p class="feature-text">Our dedicated team is always available to assist with your needs.</p>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- End Hero Section -->
-        <!-- Why TransitIQ Extended Section -->
-        <section class="why-transitiq py-5" data-aos="fade-up" data-aos-duration="2000">
-            <div class="container text-center">
-                <h2 class="fw-bold mb-5">Why TransitIQ?</h2>
-                <div class="row g-4">
+        </div>
+    </section>
 
-                    <!-- Card 1 -->
-                    <div class="col-md-4">
-                        <div class="why-card">
-                            <img src="./assets/images/customs.avif" alt="Customs Made Easier" class="img-fluid mb-3 rounded">
-                            <h4>Customs Made Easier</h4>
-                            <p>Get simplified solutions for cross-border goods and services with accurate information,
-                                reduced delays, and smooth clearance processes.</p>
+    <!-- Demo Section -->
+    <section class="demo-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">See It In Action</h2>
+                <p class="section-text">
+                    Watch how TransitIQ simplifies package tracking and logistics management.
+                </p>
+            </div>
+            <div class="demo-placeholder">
+                <div class="demo-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <p class="text-muted">Demo video coming soon</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Trusted by Thousands</h2>
+                <p class="section-text">
+                    See what our customers say about TransitIQ.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="rating mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"TransitIQ transformed our shipping operations. The real-time tracking has reduced customer inquiries by 70%."</p>
+                        <div class="testimonial-author">
+                            <p class="author-name">Sarah Johnson</p>
+                            <p class="author-role">E-commerce Manager</p>
                         </div>
                     </div>
-
-                    <!-- Card 2 -->
-                    <div class="col-md-4">
-                        <div class="why-card">
-                            <img src="./assets/images/tracking.avif" alt="Reliable Tracking" class="img-fluid mb-3 rounded">
-                            <h4>Reliable Tracking</h4>
-                            <p>Track your deliveries and services in real-time with timely updates that keep you
-                                informed and in control.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="rating mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Best logistics platform we've used. The analytics dashboard helps us make data-driven decisions."</p>
+                        <div class="testimonial-author">
+                            <p class="author-name">Michael Chen</p>
+                            <p class="author-role">Logistics Director</p>
                         </div>
                     </div>
-
-                    <!-- Card 3 -->
-                    <div class="col-md-4">
-                        <div class="why-card">
-                            <img src="./assets/images/green.avif" alt="Eco Friendly" class="img-fluid mb-3 rounded">
-                            <h4>Eco Friendly Approach</h4>
-                            <p>Stay aware of your footprint with insights that help you manage efficiency and contribute
-                                to sustainability.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="rating mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Affordable, reliable, and incredibly easy to use. Highly recommend for growing businesses."</p>
+                        <div class="testimonial-author">
+                            <p class="author-name">Emily Rodriguez</p>
+                            <p class="author-role">Small Business Owner</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Features -->
-        <section class="features py-5 text-center" data-aos="fade-up" data-aos-duration="2000">
-            <div class="container">
-                <h2 class="fw-bold mb-5">Key Features</h2>
-                <div class="row">
-                    <!-- Feature 1 -->
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="feature-card p-4 h-100">
-                            <i class="fas fa-map-marker-alt fa-2x mb-3 text-success"></i>
-                            <h5 class="fw-bold">Live Tracking</h5>
-                            <p>Monitor your goods in real time from dispatch to delivery.</p>
-                        </div>
-                    </div>
+        </div>
+    </section>
 
-                    <!-- Feature 2 -->
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="feature-card p-4 h-100">
-                            <i class="fas fa-route fa-2x mb-3 text-success"></i>
-                            <h5 class="fw-bold">Smart Routing</h5>
-                            <p>Get optimized delivery routes that save time and reduce costs.</p>
-                        </div>
-                    </div>
-
-                    <!-- Feature 3 -->
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="feature-card p-4 h-100">
-                            <i class="fas fa-clock fa-2x mb-3 text-success"></i>
-                            <h5 class="fw-bold">Real-time Alerts</h5>
-                            <p>Stay updated with instant notifications on delays or status changes.</p>
-                        </div>
-                    </div>
-
-                    <!-- Feature 4 -->
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="feature-card p-4 h-100">
-                            <i class="fas fa-mobile-alt fa-2x mb-3 text-success"></i>
-                            <h5 class="fw-bold">Easy Access</h5>
-                            <p>Track and manage your deliveries easily from any mobile device.</p>
-                        </div>
-                    </div>
-
-                </div>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container text-center">
+            <h2 class="section-title">Ready to Transform Your Logistics?</h2>
+            <p class="section-text mb-4">
+                Join thousands of businesses already using TransitIQ for smarter shipping.
+            </p>
+            <div class="cta-buttons">
+                <button class="btn btn-hero btn-lg">Get Started Free</button>
+                <a href="contact.html" class="btn btn-outline btn-lg">Contact Sales</a>
             </div>
-        </section>
-        <!-- End of features -->
-        <!-- Testimonials / Social Proof Section -->
-        <section class="testimonials" data-aos="fade-up" data-aos-duration="1000">
-            <h2><i class="fas fa-star"></i> Trusted by Customers Worldwide</h2>
+        </div>
+    </section>
 
-            <div class="testimonial-container">
-                <div class="testimonial-card">
-                    <i class="fas fa-box-open icon text-success"></i>
-                    <p>“Fast delivery and the product was exactly as described.”</p>
-                    <h4>– Michael, New York, USA</h4>
-                </div>
-
-                <div class="testimonial-card">
-                    <i class="fas fa-truck icon text-success"></i>
-                    <p>“Great customer support, they helped me track my package quickly.”</p>
-                    <h4>– Lucia, Madrid, Spain</h4>
-                </div>
-
-                <div class="testimonial-card">
-                    <i class="fas fa-shopping-bag icon text-success"></i>
-                    <p>“Quality products at good prices, I’ll keep ordering.”</p>
-                    <h4>– James, London, UK</h4>
-                </div>
-            </div>
-        </section>
-        <!-- End of Testimonials / Social Proof Section -->
-        <!-- Back to Top Button -->
-        <button id="backToTop" class="back-to-top">
-            <i class="fas fa-angle-up"></i>
-        </button>
-
-        <!-- Live Chat Button -->
-        <button id="liveChat" class="live-chat">
-            <i class="fa fa-comment"></i>
-        </button>
-        <!-- End of Back-to-Top and Live Chat buttons  -->
-    </main>
     <!-- Footer -->
-    <?php require "./partials/footer.php";?>
+    <?php require "./partials/footer.php" ?>
 
-    <script src="./assets/js/index.js"></script>
+    <!-- Scroll to Top -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Live Chat Button -->
+    <button id="liveChatBtn" class="live-chat-btn">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
     <script src="./libraries/bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
+    <!-- Custom JS -->
+    <script src="./assets/js/index.js"></script>
 </body>
-
 </html>
