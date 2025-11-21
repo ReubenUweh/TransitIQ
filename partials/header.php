@@ -26,7 +26,7 @@ echo '<header class="navbar navbar-expand-lg fixed-top">
                         <a class="nav-link active" href="contact.php">Contact</a>
                     </li>
                     <li class="nav-item ms-3">
-                        <button class="btn btn-hero">Get Started</button>
+                        <a href="tracking.php" class="btn btn-hero">Get Started</a>
                     </li>
                 </ul>
             </div>

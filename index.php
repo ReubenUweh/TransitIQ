@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TransitIQ - Smart Logistics & Real-Time Package Tracking</title>
     <meta name="description" content="Transform your logistics with TransitIQ. Real-time package tracking, AI-powered insights, and reliable courier services for modern businesses.">
     <meta name="keywords" content="logistics, package tracking, courier services, real-time tracking, delivery, shipping">
-    
+
     <!-- Bootstrap CSS -->
     <link href="./libraries/bootstrap/css/bootstrap.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -14,22 +15,34 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/index.css">
 </head>
+
 <body>
     <!-- Header -->
-   <?php require "./partials/header.php" ?>
+    <?php require "./partials/header.php" ?>
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <div class="container text-center">
-            <h1 class="hero-title">
-                Smart Logistics,<br>Delivered Faster
-            </h1>
-            <p class="hero-subtitle">
-                Track your packages in real-time with AI-powered logistics intelligence. Experience the future of courier services.
-            </p>
-            <div class="hero-buttons">
-                <button class="btn btn-hero btn-lg">Start Tracking Now</button>
-                <button class="btn btn-outline btn-lg">Watch Demo</button>
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Content -->
+                <div class="col-lg-6 col-md-12 hero-text">
+                    <h1 class="hero-title">
+                        Smart Logistics,<br>Delivered Faster
+                    </h1>
+                    <p class="hero-subtitle">
+                        Track your packages in real-time with AI-powered logistics intelligence.
+                        Experience the future of courier and delivery tracking with TransitIQ.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="./tracking.php" class="btn btn-hero btn-lg">Start Tracking Now</a>
+                        <button class="btn btn-outline btn-lg">Watch Demo</button>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="col-lg-6 col-md-12 text-center hero-image">
+                    <img src="./assets/images/hero-image.avif" alt="Courier Tracking" class="img-fluid hero-img">
+                </div>
             </div>
         </div>
     </section>
@@ -39,7 +52,7 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
-                    <h2 class="section-title">The Problem with Traditional Logistics</h2>
+                    <h2 class="section-title text-primary">The Problem with Traditional Logistics</h2>
                     <p class="section-text">
                         Lost packages. Delayed deliveries. Poor visibility. Frustrated customers. Traditional logistics systems leave you in the dark.
                     </p>
@@ -223,7 +236,7 @@
             </p>
             <div class="cta-buttons">
                 <button class="btn btn-hero btn-lg">Get Started Free</button>
-                <a href="contact.html" class="btn btn-outline btn-lg">Contact Sales</a>
+                <a href="./contact.php" class="btn btn-outline btn-lg">Contact Sales</a>
             </div>
         </div>
     </section>
@@ -246,4 +259,5 @@
     <!-- Custom JS -->
     <script src="./assets/js/index.js"></script>
 </body>
+
 </html>
